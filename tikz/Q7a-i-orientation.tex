@@ -1,0 +1,69 @@
+\documentclass[12pt,border=0pt]{standalone}
+\input{tikz-preamble}
+
+\begin{document}
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+  \def\W{13}
+  \def\H{4.7}
+  \path[use as bounding box] (0,0) rectangle (\W,\H);
+  % \LayoutGrid
+
+  % A<<<
+  \begin{scope}[
+    shift={(3,2.45)},
+    scale={0.75} % doesn't scale node text
+  ]
+
+    \node[anchor=north west] at (-2.8,2.8) {$A$};
+
+    \fill[blue!10] (-1,0) circle (2);
+    \fill[white] (-1,0) circle (1);
+
+    \drawAxes{-3.6}{3}{-3}{3}
+
+    \draw[closedboundary] (-1,0) circle (2);
+    \draw[closedboundary] (-1,0) circle (1);
+
+    \filldraw[closedpoint] (-3,0) circle (\pointsize);
+    \node at (-3.45,-0.35) {$-3$};
+
+    \filldraw[closedpoint] (-2,0) circle (\pointsize);
+    \node at (-2.45,-0.35) {$-2$};
+
+    \filldraw[closedpoint] (0,0) circle (\pointsize);
+    \node at (0.3,-0.35) {$0$};
+
+    \filldraw[closedpoint] (1,0) circle (\pointsize);
+    \node at (1.3,-0.35) {$1$};
+
+  \end{scope}% >>>
+
+  % B<<<
+  \begin{scope}[
+    shift={(10,2.45)},
+    scale={0.75}
+  ]
+
+    \node[anchor=north west] at (-2.8,2.8) {$B$};
+
+    \fill[blue!10] (-1,-3) rectangle (2.83,0);
+
+    \drawAxes{-3}{3}{-3}{3}
+
+    \draw[openboundary] (-1,-3) -- (-1,0);
+    \draw[openboundary] (-1,0) -- (3,0);
+
+    \filldraw[openpoint] (-1,0) circle (\pointsize);
+    \node at (-1.55,-0.35) {$-1$};
+
+    \filldraw[openpoint] (0,0) circle (\pointsize);
+    \node at (0.3,-0.35) {$0$};
+
+  \end{scope}% >>>
+
+\end{tikzpicture}
+
+\end{document}
+% vim: foldmethod=marker:fmr=<<<,>>>

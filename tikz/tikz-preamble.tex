@@ -1,0 +1,54 @@
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\usepackage{amsmath,amssymb}
+
+% Grid for alignment, needs \W and \H
+\newcommand{\LayoutGrid}{
+  \begin{scope}[overlay]
+    % thin lines
+    \draw[step=0.5cm, line width=0.05mm, black!20]
+      (0,0) grid (\W,\H);
+    % thick lines
+    \draw[step=1cm, line width=0.15mm, black!35]
+      (0,0) grid (\W,\H);
+    \pgfmathtruncatemacro{\GridW}{floor(\W)}
+    \pgfmathtruncatemacro{\GridH}{floor(\H)}
+    \foreach \x in {1,...,\GridW}{
+      \node[anchor=south east,
+            inner sep=0.5pt,
+            font=\tiny,
+            text=black!50]
+        at (\x-0.05,0.05) {\x};
+    }
+    \foreach \y in {1,...,\GridH}{
+      \node[anchor=north west,
+            inner sep=0.5pt,
+            font=\tiny,
+            text=black!50]
+        at (0.05,\y-0.05) {\y};
+    }
+  \end{scope}%
+}
+
+\newcommand{\pointsize}{0.08}
+
+% Styles
+\tikzset{
+  closedboundary/.style={line width=1.2pt},
+  openboundary/.style={
+    line width=1.2pt,
+    dash pattern=on 4pt off 4pt,
+    line cap=round
+  },
+  closedpoint/.style={closedboundary, fill=black, draw=black},
+  openpoint/.style={closedboundary, fill=white, draw=black}
+}
+
+% Axes around origin
+% updated to take 4 arguments 
+% X1 to X2, Y3 to Y4
+\newcommand{\drawAxes}[4]{%
+  \draw[-Stealth] (#1,0) -- (#2,0);
+  \draw[-Stealth] (0,#3) -- (0,#4);
+}
