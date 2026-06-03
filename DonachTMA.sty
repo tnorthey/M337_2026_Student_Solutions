@@ -1,0 +1,111 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{DonachTMA}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\RequirePackage{amsfonts}
+\RequirePackage{amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{derivative}
+\usepackage{siunitx}
+\usepackage{physics}
+\usepackage{fancyhdr}
+\RequirePackage{lastpage}
+\usepackage{pdfpages}
+\usepackage{mathcommand}
+\usepackage{wasysym}
+\usepackage{mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\usepackage{scalerel}
+
+% right align matrices
+%\renewenvironment{pmatrix}{\begin{pmatrix*}[r]}{\end{pmatrix*}}
+
+%system of linear equations
+% \usepackage{systeme}
+% \sysdelim..
+% \sysalign{r,r}
+% \sysalign{r,r}
+
+% new commands to make a derivative d and to make various math letters, eg for classes of numbers
+\renewcommand{\dd}{\ensuremath{\, \mathrm{d}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Rr}{\ensuremath{\mathcal{R}}}
+
+% some arrows
+\newcommand{\maps}{\mapsto}
+\newcommand{\lmaps}{\longmapsto}
+\newcommand{\darrow}{\downarrow}
+\newcommand{\Darrow}{\Downarrow}
+% equivalence symbol
+\newcommand{\lra}{\Leftrightarrow}
+
+%generator
+\newcommand{\gen}[1]{\ensuremath{\langle #1 \rangle}}
+
+% Math operators
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Wnd}{Wnd}
+%\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Orb}{Orb}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Fix}{Fix}
+
+% Function definition
+\newcommand{\funcdef}[5]{%
+    #1 : #2 & \longrightarrow #3, \\
+    #4 & \longmapsto #5
+}
+
+% Equivalence classes
+\newcommand{\eqcl}[1]{\ensuremath{[\![#1]\!]}}
+
+% long division sign and phantom ) space phantom abbrev
+\newcommand{\longdiv}{\smash{\mkern-0.43mu\vstretch{1.31}{\hstretch{.7}{)}}\mkern-5.2mu\vstretch{1.31}{\hstretch{.7}{)}}}}
+\newcommand{\hp}{\hphantom{)}}
+\newcommand{\ph}[1]{\phantom{#1}}
+
+% fancy page style, headers and footer
+\pagestyle{fancy}
+
+\fancyhead[L]{Donach Malachy G7102891}
+\fancyhead[R]{TMA}
+\fancyfoot[C]{page \thepage \ of \pageref{LastPage}}
+
+% some quick vertical space commands
+\newcommand{\bs}{\bigskip}
+\newcommand{\vs}{\vspace{12pt}}
+\newcommand{\vvs}{\vspace{24pt}}
+\newcommand{\vvvs}{\vspace{36pt}}
+
+
+%quick italic command
+\newcommand{\itc}{\textit}
+
+%quick boldface
+\renewmathcommand\bf[1]{\mathbf{#1}}
+\renewtextcommand\bf[1]{\textbf{#1}}
+
+%some more bold commands, for matrix rows and vector v, tho see also \vb{} for vectors
+\newcommand{\rb}{\mathbf{r}}
+\newcommand{\vv}{\mathbf{v}}
+
+\setcounter{secnumdepth}{0}
+
+%handy text phrases
+\newcommand{\bwoc}{By way of contradiction}
+
+
+\endinput

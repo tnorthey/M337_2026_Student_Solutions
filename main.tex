@@ -1,0 +1,137 @@
+\documentclass[a4paper]{article}
+\usepackage{DonachTMA}
+
+%\renewcommand{\exp}[1]{\exp\left(#1\right)}
+
+\title{M337 2026 Student Exam Solutions}
+\author{M337 Students }
+\date{June 2026}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\fancyhead[L]{Your name}
+
+\maketitle
+
+\section{Question 1}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 2}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \begin{enumerate}[label=(\roman*)]
+        \item 
+        Let $ \mathcal{R} $ be the simply connected region $\{ x: |z| < 3/2  \}$,  \\
+        $f(z) = \dfrac{ e^{-2z} }{ z+2i }$. \\
+        Then $f$ is analytic on $ \mathcal{R} $ and $ C $ is a simple-connected contour in $\mathcal{R} $.
+        \vs \\
+        Thus by CAUCHY'S THEOREM,
+        \[ \int_C = \frac{ e^{-2z} }{ z+2i } = 0. \]
+        \vvs \\
+        \item 
+        Let $ \mathcal{R} $ and $f$ be as above, meeting the same conditions.
+        \vs \\
+        Then, by CAUCHY'S INTEGRAL FORMULA,
+        \begin{align*}
+            \int_C \frac{ e^{-2z} }{ z(z+2i) } &= 2\pi i f(0) \\
+            &= 2\pi i \left( \frac{1}{0 + 21} \right) = \pi.
+        \end{align*}
+        \vvs \\
+        \item 
+        With $ \mathcal{R} $ and $f$ as above, meeting the same conditions,
+        \vs \\
+        by CAUCHY'S FIRST DERIVATIVE FORMULA, as
+        \begin{align*}
+            f'(z) &= \frac{ (z+2i)(-2e^{-2z}) - e^{-2z}(1) }{ (z+2i)^2 }
+            \intertext{by the QUOTIENT RULE for differentiation}
+            &= - \frac{ e^{-2z}( 2z+4i+1 ) }{(z+2i)^2} \\
+            \int_C \frac{ e^{-2z} }{ z2(z+2i) } &= 2\pi i f'(0) \\
+            &= 2\pi i \left( -\frac{ 1+4i }{ (2i)^2 } \right) \\
+            &= 2\pi i \left( \frac{ 1+4i }{ 4 } \right) \\
+            &= -2\pi + \frac{1}{2}\pi i = \pi \left( -2 + \frac{1}{2}i \right).
+        \end{align*}
+    \end{enumerate}
+    \leavevmode \vvvs \\
+    \item 
+    $C$ is the unit circle and $\Gamma$ is the circle of radius 1/2 centred at the origin but traversed in the opposite direction. It also nominally has different start and end points, but this is irrelevant as it is a CLOSED CONTOUR.
+    \vs \\
+    $ \mathcal{R} $ is a simply connected region, $C$ is a simple-closed contour in $ \mathcal{R} $, with 0 the centre, and hence inside, of both $C$ and $\Gamma$. In each case our integrand is analytic on $ \mathcal{R} - \{ 0 \} $.
+    \vs \\
+    Thus, by the SHRINKING CONTOUR Theorem, and, by the REVERSE CONTOUR Theorem (to account for the direction), our answers would all be multiplied by -1.
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 3}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 4}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    By HB C3 3.8 p76, the inverse of $\infty$ with respect to a circle is its centre. \\
+    So $\beta = 1$
+    \vvs \\
+    \item 
+    From the Theorem HB C3 3.6 p75,
+    \begin{align*}
+        f(\alpha) &= \frac{ \infty - 2i }{ i\infty - 1 } \to \frac{1}{i} = -i \\
+        f(\beta)  &= \frac{ 1-2i }{ i-1 } = \frac{ (1-2i)(-1+i) }{2} \\
+        &= \frac{1}{2} ( 1+3i ) = \frac{1}{2} + \frac{3}{2}i.
+    \end{align*}
+    Then,
+    \[ |z+i| = k| z - \frac{1}{2}(1+3i) | \].
+    \vs \\
+    Now the point 0 is on $C$, so $f(0)$ is on $f(C)$:
+    \[ f(0) = \frac{-2i}{-1} = 2i. \]
+    \vs \\
+    Thus,
+    \[ k= \left| \frac{3i}{ -\frac{1}{2} + \frac{1}{2}i  } \right| = \left| \frac{-6}{ -1-i } \right| = \frac{6}{\sqrt{2}} = 3\sqrt{2}. \]
+    \vvs \\
+    \item 
+    By HB C3 3.11 p76, the centre of the circle is
+    \[ \lambda = \frac{ -i - 18( \frac{1}{2} ( 1+3i ) ) }{ 1-18 } = \frac{1}{17}(9+28i), \]
+    \vs \\
+    and the radius is 
+    \[ r = \frac{ 3\sqrt{2}|\frac{1}{2} (1+i)| }{17} = \frac{3}{17}. \]
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 5}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 6}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 7}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 8}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+\leavevmode\vvvs \\
+
+\section{Question 9}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+
+
+
+\end{document}
