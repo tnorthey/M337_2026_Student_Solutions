@@ -1,46 +1,56 @@
+\newpage
 \section{Question 5}
 Let $q$ be the velocity function
+\[
+q(z) = \frac{2i}{i - \overline{z}}.
+\]
+\vs \\
+\begin{enumerate}[label=(\alph*)]
+  \item % Part (a)
+  The conjugate velocity function is
+  \vs \\
   \[
-  q(z) = \frac{2i}{i - \overline{z}}.
+  \overline{q}(z) = \overline{\frac{2i}{i - \overline{z}}} = \frac{\overline{2i}}{\overline{i\,} - z}= \frac{-2i}{-i - z} = \frac{2i}{z + i}, \quad \text{which is analytic on \ }\mathbb{C} - \{-i\}.
   \]
   \vs \\
-\begin{enumerate}[label=(\alph*)]
-    \item % Part (a)
-    The conjugate velocity function is
-    \vs \\
-    \[
-    \overline{q}(z) = \overline{\frac{2i}{i - \overline{z}}} = \frac{\overline{2i}}{\overline{i\,} - z}= \frac{-2i}{-i - z} = \frac{2i}{z + i}, \quad \text{which is analytic on \ }\mathbb{C} - \{-i\}.
-    \]
-    \vs \\
-    Hence, by HB D1 1.15 p81, $q$ is the velocity function for an ideal flow on $\mathbb{C} - \{-i\}$.
-    \vvs \\
-    \item % Part (b)
-    A complex potential function for the flow  (i.e., a primitive of $\overline{q}$ on $\mathbb{C} - \{-i\}$) is
-    \vs \\
-    \[
-    \Omega(z) = \int \overline{q}(z)\,dz = \int \frac{2i}{z + i}\,dz = 2i\Log (z + i).
-    \]
-    \vs \\
-    Hence a stream function for the flow is
-    \vs \\
-    \begin{align*}
-      \Psi(z) = \Im \Omega(z) &= \Im \Big[2i\Log(z + i)\Big] \\[4pt]
-        &= \Im \Big[  2i \Big(\log \left| z + i \right| + i\Arg (z + i)\Big)\Big] \\[4pt]
-        &= \Im \Big[ -2\Arg(z + i) + i \log \left| z + i\right|^2\Big] \\[4pt]
-        &= \log\left| z + i\right|^2.
-    \end{align*}
-    \vs \\
-    Now let $z = x + iy$, \ so  that \ $\left|z + i\right|^2 = \left| x + iy + i\right|^2 = x^2 + (y + 1)^2$; 
+  Hence, by HB D1 1.15 p81, $q$ is the velocity function for an ideal flow on $\mathbb{C} - \{-i\}$.
+  \vvs \\
+  \item % Part (b)
+  A complex potential function for the flow  (i.e., a primitive of $\overline{q}$ on $\mathbb{C} - \{-i\}$) is
+  \vs \\
+  \[
+  \Omega(z) = \int \overline{q}(z)\,dz = \int \frac{2i}{z + i}\,dz = 2i\Log (z + i).
+  \]
+  \vs \\
+  Hence a stream function for the flow is
+  \vs \\
+  \begin{align*}
+    \Psi(z) = \Im \Omega(z) &= \Im \Big[2i\Log(z + i)\Big] \\[4pt]
+    &= \Im \Big[  2i \Big(\log \left| z + i \right| + i\Arg (z + i)\Big)\Big] \\[4pt]
+    &= \Im \Big[ -2\Arg(z + i) + i \log \left| z + i\right|^2\Big] \\[4pt]
+    &= \log\left| z + i\right|^2.
+  \end{align*}
+  \vs \\
+  Now let $z = x + iy$, \ so  that \ $\left|z + i\right|^2 = \left| x + iy + i\right|^2 = x^2 + (y + 1)^2$; 
 
-    and since on the streamlines, $\Psi(z) = k$, for $k \in \mathbb{R}$, we have
-    \vs \\
-    \[
-    \Psi(x,y) = \log\left(x^2 + (y + 1)^2\right) = k \quad \Rightarrow \quad x^2 + (y + 1)^2 = e^k.
-    \]
-    \vs \\
-    Finally, putting $e^k = K > 0$, we get equations for the streamlines of the flow, in $x$ and $y$:
-    \vs \\
-    \[
-    x^2 + (y + 1)^2 = K,\quad K > 0. \quad \text{These are circles centred at the point $(0, -1)$.}
-    \]
+  and since on the streamlines, $\Psi(z) = k$, for $k \in \mathbb{R}$, we have
+  \vs \\
+  \[
+  \Psi(x,y) = \log\left(x^2 + (y + 1)^2\right) = k \quad \Rightarrow \quad x^2 + (y + 1)^2 = e^k.
+  \]
+  \vs \\
+  Finally, putting $e^k = K > 0$, we get equations for the streamlines of the flow, in $x$ and $y$:
+  \vs \\
+  \[
+  x^2 + (y + 1)^2 = K,\quad K > 0. \quad \text{These are circles centred at the point $(0, -1)$.}
+  \]
+  \newpage
+  \item % Part (c)
+  Sketch below (more to follow!)
+
+  \begin{figure}[htbp]
+    \centering
+    % Tikz picture for Q7-ai
+    \input{tikz/Q5/Q5-c}
+  \end{figure}
 \end{enumerate}
