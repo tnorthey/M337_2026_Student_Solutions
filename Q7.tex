@@ -20,7 +20,66 @@
     \end{enumerate}
 
     \item 
-    
+    \begin{enumerate}
+        \item 
+        Let,
+        \[
+        z = x + iy
+        \]
+        \[
+        \implies \overline{z} = x - iy
+        \]
+        Then,
+        \[
+        h(x+iy) = (x-iy)^2 + (x+iy)(x-iy) - y
+        \]
+        \[
+        = x^2 + i^2y^2 - 2ixy +x^2 +y^2 - y
+        \]
+        \[
+        = 2x^2 - y - 2ixy
+        \]
+        as required.
+        \item 
+        We let $h(x+iy)=u(x,y)+iv(x,y)$ be defined on a region $\C$ containing $a+ib$. Then,
+        \[
+        u(x,y)=2x^2 - y
+        \]
+        and,
+        \[
+        v(x,y)=-2xy
+        \]
+        and hence their partials are,
+        \[
+        u_x = 4x,\quad u_y = -1
+        \]
+        and,
+        \[
+        v_x = -2y,\quad v_y = -2x
+        \]
+        We now check the point $(a,b)$ via the Cauchy-Riemann equations,
+        \[
+        u_x(a,b) = 4a = v_y(a,b) = -2a
+        \]
+        \[
+        \implies 4a = -2a
+        \]
+        \[
+        \implies a = 0
+        \]
+        and,
+        \[
+        v_x(a,b)=-2b = -u_y(a,b) = -1
+        \]
+        \[
+        \implies b = \frac{1}{2}
+        \]
+        Therefore, the CR equations are satisfied at $(0, \frac{1}{2})$, and since the partial derivatives exist at $(x,y)$ for each $x+iy \in \C$ and are continuous at $(0, \frac{1}{2})$, $h$ is differentiable at this point and has a derivative here of,
+        \[
+        h'(0+\frac{1}{2}i) = - i
+        \]
+        by the Cauchy-Riemann Converse Theorem.
+        \end{enumerate}
 \end{enumerate}
 
 \begin{figure}[p]
