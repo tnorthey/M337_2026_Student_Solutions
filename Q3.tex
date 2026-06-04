@@ -37,14 +37,14 @@
     = \frac{i^2/5}{2\sqrt{5}i^3(1/\sqrt{5} - 1)(1/\sqrt{5} + 1)}
     \]
     \[
-    = \frac{1/5}{2i(1 - \sqrt{5})(1 + \sqrt{5})}
+    = \frac{1/5}{2\sqrt{5}i(1/5 - 1)}
     \]
     \[
-    = \frac{1}{10i(1-5)} = -\frac{1}{40i} = \frac{i}{40}
+    = \frac{1}{2\sqrt{5}i(1-5)} = -\frac{1}{8\sqrt{5}i} = \frac{i}{8\sqrt{5}}
     \]
     and therefore,
     \[
-    \Res(f,-i/\sqrt{5}) = -\frac{i}{40}
+    \Res(f,-i/\sqrt{5}) = -\frac{i}{8\sqrt{5}}
     \]
     for the same reason.
 
@@ -66,10 +66,16 @@
 
     We have from (a),
     \[
-    S = \Res(f,i) + \Res(f,i/\sqrt{5}) = -\frac{i}{8} + \frac{i}{40} = -\frac{4i}{40} = -\frac{i}{10}
+    S = \Res(f,i) + \Res(f,i/\sqrt{5}) = -\frac{i}{8} + \frac{i}{8\sqrt{5}}
+    \]
+    \[
+    = \frac{i}{8}\left(\frac{1}{\sqrt{5}} - 1\right) = \frac{i}{8}\left(\frac{1-\sqrt{5}}{\sqrt{5}}\right) = \frac{i(1-\sqrt{5})\sqrt{5}}{40} = \frac{i(\sqrt{5}-5)}{40}
     \]
     Therefore the solution to the integral is,
     \[
-    \int_{-\infty}^{\infty} \frac{p(t)}{q(t)}\dd t = \frac{\pi}{5}
+    \int_{-\infty}^{\infty} \frac{p(t)}{q(t)}\dd t = -\frac{2\pi(\sqrt{5}-5)}{40} = \frac{\pi(5 - \sqrt{5})}{20}
     \]
+
+    \textbf{TN: .... Confirm this is correct!}
+    
 \end{enumerate}
