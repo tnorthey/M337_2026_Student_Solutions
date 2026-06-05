@@ -16,81 +16,31 @@
 
 \maketitle
 
+% Question 1
 \input{Q1}
-\leavevmode\vvvs \\
 
-\section{Question 2}
-\begin{enumerate}[label=(\alph*)]
-    \item 
-    \begin{enumerate}[label=(\roman*)]
-        \item 
-        Let $ \mathcal{R} $ be the simply connected region $\{ x: |z| < 3/2  \}$,  \\
-        $f(z) = \dfrac{ e^{-2z} }{ z+2i }$. \\
-        Then $f$ is analytic on $ \mathcal{R} $ and $ C $ is a simple-connected contour in $\mathcal{R} $.
-        \vs \\
-        Thus by CAUCHY'S THEOREM,
-        \[ \int_C = \frac{ e^{-2z} }{ z+2i } = 0. \]
-        \vvs \\
-        \item 
-        Let $ \mathcal{R} $ and $f$ be as above, meeting the same conditions.
-        \vs \\
-        Then, by CAUCHY'S INTEGRAL FORMULA,
-        \begin{align*}
-            \int_C \frac{ e^{-2z} }{ z(z+2i) } &= 2\pi i f(0) \\
-            &= 2\pi i \left( \frac{1}{0 + 21} \right) = \pi.
-        \end{align*}
-        \vvs \\
-        \item 
-        With $ \mathcal{R} $ and $f$ as above, meeting the same conditions,
-        \vs \\
-        by CAUCHY'S FIRST DERIVATIVE FORMULA, as
-        \begin{align*}
-            f'(z) &= \frac{ (z+2i)(-2e^{-2z}) - e^{-2z}(1) }{ (z+2i)^2 }
-            \intertext{by the QUOTIENT RULE for differentiation}
-            &= - \frac{ e^{-2z}( 2z+4i+1 ) }{(z+2i)^2} \\
-            \int_C \frac{ e^{-2z} }{ z2(z+2i) } &= 2\pi i f'(0) \\
-            &= 2\pi i \left( -\frac{ 1+4i }{ (2i)^2 } \right) \\
-            &= 2\pi i \left( \frac{ 1+4i }{ 4 } \right) \\
-            &= -2\pi + \frac{1}{2}\pi i = \pi \left( -2 + \frac{1}{2}i \right).
-        \end{align*}
-    \end{enumerate}
-    \leavevmode \vvvs \\
-    \item 
-    $C$ is the unit circle and $\Gamma$ is the circle of radius 1/2 centred at the origin but traversed in the opposite direction. It also nominally has different start and end points, but this is irrelevant as it is a CLOSED CONTOUR.
-    \vs \\
-    $ \mathcal{R} $ is a simply connected region, $C$ is a simple-closed contour in $ \mathcal{R} $, with 0 the centre, and hence inside, of both $C$ and $\Gamma$. In each case our integrand is analytic on $ \mathcal{R} - \{ 0 \} $.
-    \vs \\
-    Thus, by the SHRINKING CONTOUR Theorem, and, by the REVERSE CONTOUR Theorem (to account for the direction), our answers would all be multiplied by -1.
-\end{enumerate}
-\leavevmode\vvvs \\
+% Question 2
+\input{Q2}
 
-
+% Question 3
 \input{Q3}
-% \leavevmode\vvvs \\
 
-
+% Question 4
 \input{Q4}
-% \leavevmode\vvvs \\
 
-
+% Question 4
 \input{Q5}
-% \leavevmode\vvvs \\
 
+% Question 6
 \input{Q6}
-% \leavevmode\vvvs \\
 
-
+% Question 7
 \input{Q7}
-% \leavevmode\vvvs \\
 
-\leavevmode\vvvs \\
-
+% Question 8
 \input{Q8}
-\section{Question 9}
-\begin{enumerate}[label=(\alph*)]
-    \item 
-\end{enumerate}
 
-
+% Question 9
+\input{Q9}
 
 \end{document}
