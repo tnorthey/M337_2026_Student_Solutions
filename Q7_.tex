@@ -1,0 +1,91 @@
+\section{Question 7}
+\begin{enumerate}[label=(\alph*)]
+\item
+    \begin{enumerate}[label=(\roman*)]
+    \item See set sketches below.
+    \item 
+    Firstly, $A-B$ is bounded since it can be contained in some closed disc. It is also closed. Therefore, it is compact.
+    
+    The function $f$ is continuous on $A-B$ since it has no singularities within. Therefore, by The Boundedness Theorem, $f$ is bounded on $A-B$.
+
+    Finally, the set $C$ is unbounded, as is $C - \{-1\}$.
+
+    Also, if we write $z+i = x+iy$,
+    \[
+    \implies \exp\left(\frac{i}{z+i}\right) = \exp\left(\frac{y}{x^2+y^2}\right)\exp\left(i\frac{x}{x^2+y^2}\right)
+    \]
+    it is clear that as $y\rightarrow\infty$, $f\rightarrow\infty$. Hence, $f$ is unbounded on $C-\{-1\}$.
+
+    \textcolor{purple}{I think this is valid reasoning, since as $y\rightarrow\infty$ the imaginary part $\rightarrow e^{i/x}$ and the real part $\rightarrow \infty$, so it's a circle tending towards infinite radius which is clearly unbounded. However, I'm not 100\% sure. I'm certain both of you did it differently, we can consider replacing what I did with one of your solutions Donach and John?\\ -- Thomas} \\
+    \textcolor{teal}{I'll have a look at this once I've finished Q6 \\ -- Donach}
+    
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}
+        \item 
+        Let,
+        \[
+        z = x + iy
+        \]
+        \[
+        \implies \overline{z} = x - iy
+        \]
+        Then,
+        \[
+        h(x+iy) = (x-iy)^2 + (x+iy)(x-iy) - y
+        \]
+        \[
+        = x^2 + i^2y^2 - 2ixy +x^2 +y^2 - y
+        \]
+        \[
+        = 2x^2 - y - 2ixy
+        \]
+        as required.
+        \item 
+        We let $h(x+iy)=u(x,y)+iv(x,y)$ be defined on a region $\C$ containing $a+ib$. Then,
+        \[
+        u(x,y)=2x^2 - y
+        \]
+        and,
+        \[
+        v(x,y)=-2xy
+        \]
+        and hence their partials are,
+        \[
+        u_x = 4x,\quad u_y = -1
+        \]
+        and,
+        \[
+        v_x = -2y,\quad v_y = -2x
+        \]
+        We now check the point $(a,b)$ via the Cauchy-Riemann equations,
+        \[
+        u_x(a,b) = 4a = v_y(a,b) = -2a
+        \]
+        \[
+        \implies 4a = -2a
+        \]
+        \[
+        \implies a = 0
+        \]
+        and,
+        \[
+        v_x(a,b)=-2b = -u_y(a,b) = -1
+        \]
+        \[
+        \implies b = \frac{1}{2}
+        \]
+        Therefore, the CR equations are satisfied at $(0, \frac{1}{2})$, and since the partial derivatives exist at $(x,y)$ for each $x+iy \in \C$ and are continuous at $(0, \frac{1}{2})$, $h$ is differentiable at this point and has a derivative here of,
+        \[
+        h'(0+\frac{1}{2}i) = - i
+        \]
+        by the Cauchy-Riemann Converse Theorem.
+        \end{enumerate}
+\end{enumerate}
+
+\begin{figure}[p]
+\centering
+    % TIKZ PICTURE FOR Q7-ai
+    \input{tikz/Q7/Q7-ai-set-sketches}
+\end{figure}
