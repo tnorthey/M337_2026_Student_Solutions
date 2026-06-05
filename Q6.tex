@@ -12,12 +12,12 @@ where
 \[ d = -3 - \frac{2}{2} - \frac{1}{4}(2^2) = -3-1-1 = -5 . \]
 The conjugating function is $ h(z) = iz - \dfrac{2}{2} = iz - 1 $. 
 \vs \\
-Thus, $ w_0 = h(z_0) = i(i)-1 = 2 $, as required.
+Thus, $ w_0 = h(z_0) = i(i)-1 = -2 $, as required.
 \vvs \\
 \item 
 \begin{enumerate}[label=(\roman*)]
     \item 
-    $ c = -\dfrac{6}{5} + \frac{1}{10}i $, by the diagram in HB D2 4.4 p91 looks like it is in the Mandelbrot set.
+    By the diagram in HB D2 4.4 p91, $ c = -\dfrac{6}{5} + \frac{1}{10}i $, looks like it is in the Mandelbrot set.
     \vs \\
     Now,
     \begin{align*}
@@ -26,6 +26,20 @@ Thus, $ w_0 = h(z_0) = i(i)-1 = 2 $, as required.
               &= \sqrt{ \frac{5}{100} } \\
               &= \sqrt{\frac{1}{20}} < \sqrt{ \frac{1}{16} } = \frac{1}{4}.
     \end{align*}
-    So, by HB D2 4.11(b), $P_c$ has an attracting 2-cycle. Hence, by HB D2 4.10, p92, $ -\dfrac{6}{5} + \frac{1}{10}i $ is in the Mandelbrot set.
+    So, by HB D2 4.11(b), $P_c$ has an attracting 2-cycle. 
+    \vs \\
+    Hence, by HB D2 4.10, p92, $ -\dfrac{6}{5} + \dfrac{1}{10}i $ is in the Mandelbrot set.
+    \vvs \\
+    \item 
+    As $ c = 1 + \dfrac{2}{5}i $,
+    \begin{align*}
+        P_c(0)   &= 1 + \frac{2}{5}i \\
+        P^2_c(0) &= \frac{1}{5} + \frac{4}{5}i + 1 +  \frac{2}{5}i = \frac{6}{5}(1+i) \\
+        P^3_c(0) &= \frac{36}{25}(2i) + 1 + \frac{2}{5}i \\
+                 &= 1 + \frac{82}{25}i.
+    \end{align*}
+    But $ | P^3_c(0) | > \left| \dfrac{82}{25}i \right| > 3 >2 $.
+    \vs \\
+    So, by HB D2 4.6 p92, $ c = 1 + \dfrac{2}{5}i $ is not in the Mandelbrot set.
 \end{enumerate}
 \end{enumerate}
