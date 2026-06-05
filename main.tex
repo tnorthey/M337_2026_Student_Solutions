@@ -86,79 +86,9 @@
 \input{Q7}
 % \leavevmode\vvvs \\
 
-\section{Question 8}
-\begin{enumerate}[label=(\alph*)]
-    \item
-    \begin{enumerate}[label=(\roman*)]
-        \item 
-        By the RADIUS of CONVERGENCE Formula,
-        \begin{align*}
-            R &= \lim_{n\to\infty} \left| \frac{3^n + 5n}{n!} \times \frac{ (n+1)! }{ 3^{n+1} + 5(n+1) }  \right| \\
-              &= \lim_{n\to\infty} \left| \frac{ \left(1 + \frac{5n}{3^n}\right)n }{ 3 + 5\left(\frac{n+1}{3^n}\right) } \right| \\
-              &= \lim_{n\to\infty} \left| \frac{(1+0)n}{3 + 5(0)} \right| \to \infty \text{ as } n \to \infty.
-        \end{align*}
-        So the radius of curvature is infinite.
-        \vvs \\
-        \item 
-        By the RADIUS of CONVERGENCE Formula,
-        \begin{align*}
-            R &= \lim_{n\to\infty} \left| \frac{ (2n^2 + e^{-n})2 }{ 2( 2(n+1)^2 + e^{-(n+1)} ) } \right| \\
-            \intertext{but $e^{-n},e^{-(n+1)} \to \infty \text{ as } n \to \infty $,}
-              &= \lim_{n\to\infty} \left|  \frac{ 2n^2 + 0 }{ 2(n+1)^2 + 0 } \right| \to 1.
-        \end{align*}
-        Thus, the radius of curvature is 1.
-    \end{enumerate}
-    \leavevmode \vvs \\
-    \item 
-    \begin{enumerate}[label=(\roman*)]
-        \item 
-        As $ \sinh 0 = 0 $, the condition in HB B3 4.5, p53 is satisfied and we can use the COMPOSITION RULE for Power Series.
-        \vs \\
-        Thus,
-        \begin{align*}
-           f(z) &= \sin\left( z + \frac{z^3}{3!} + \frac{z^5}{5!} + \ldots \right) \quad \text{for } z \in \C \\
-             &= \left( z + \frac{z^3}{3!} + \frac{z^5}{5!} + \ldots \right) - \frac{1}{3!}\left( z + \frac{z^3}{3!} + \ldots \right)^3 + \frac{1}{5!}\left( z + \ldots \right)^5 \quad \text{for } z \in \C \\
-             &= \left( z + \frac{z^3}{3!} + \frac{z^5}{5!} + \ldots \right) - \frac{1}{3!}\left( z^3 + \frac{z^5}{3!} + \ldots \right) + \frac{1}{5!}\left( z^5 + \ldots \right) \\
-             &= z + \left( \frac{1}{3!} - \frac{1}{3!} \right)z^3 + \left( \frac{1}{5!} - \frac{1}{12} + \frac{1}{5!} \right)z^5 + \ldots \\
-             &= z - \frac{z^5}{15} + \ldots \quad \text{for } z \in \C, \text{ as required}.
-        \end{align*}
-        \vvs \\
-        \item 
-        $ z^4 f(1/z) $ has a Laurent Series around 0 of
-        \[ z^3 - \frac{1}{15z} + \ldots \; . \]
-        Hence, by the defintion of Residues:
-        \[ \Res \big(z^4 f(1/z), 0\big) = -\frac{1}{15}. \]
-        Let $ \mathcal{R} $ be the simply connected region $\C$. Then $ z^4 f(1/z) $ is analytic on $ \mathcal{R} $, except for the singularity at 0 and $C$ is a simple-closed contour in $ \mathcal{R} $ not passing through 0.
-        \vs \\
-        Thus, by CAUCHY'S RESIDUE Theorem,
-        \begin{align*}
-            \int_C z^4 f\left( \frac{1}{z} \right) \dd z &= 2\pi i \Res\left( z^4 f\left( \frac{1}{z} \right), 0 \right) \\
-            &= -\frac{2\pi}{15}i.
-        \end{align*}
-    \end{enumerate} 
-    \item 
-    \begin{enumerate}[label=(\roman*)]
-        \item 
-        Note first that $ \cosh z - \sinh z = e^{-z} $ and $ |e^{-z}| > 0 $.
-        \vs \\
-        If we choose
-        \[ f(z) = \cosh z - e^{-z} +3 \text{ and } g(z) = \frac{\sinh z}{3}, \]
-        then both $f$ and $g$ are non-constant and entire.
-        \vs \\
-        So,
-        \begin{align*}
-            |f(z) - 3g(z)| &= \left| \cosh z - e^{-z} +3 - 3\left(\frac{\sinh z}{3}\right)  \right| \\
-            &= |e^{-z} - e^{-z} + 3| = 3.
-        \end{align*}
-        Hence, $ f(z) = \cosh z - e^{-z} +3 \text{ and } g(z) = \dfrac{\sinh z}{3} $ are both non-constant, entire, and satisfy $ |f(z) - 3g(z)| >2 $ for $z \in \C$, as required.
-        \vvs \\
-        \item 
-        Let $ g(z) = \left( \dfrac{e^z - 1}{3} \right) $, then $g$ is entire and non-constant, with $g(0) = 0$ and 
-        \[ | e^z - 3g(z) | < 2, \quad \text{for } z \in \C, \text{ as required}. \]
-    \end{enumerate}
-\end{enumerate}
 \leavevmode\vvvs \\
 
+\input{Q8}
 \section{Question 9}
 \begin{enumerate}[label=(\alph*)]
     \item 

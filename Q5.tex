@@ -46,11 +46,43 @@ q(z) = \frac{2i}{i - \overline{z}}.
   \]
   \newpage
   \item % Part (c)
-  Sketch below (more to follow!)
+  The streamline passing through the point $1 + i$ satisfies the equation
+  \vs
+  \[
+  \Psi(1,1) = \log\left(1^2 + (1 + 1)^2\right) = \log 5.
+  \]
+  So this particular streamline has equation
+  \vs
+  \[
+  x^2 + (y + 1)^2 = 5;\quad \text{that is, a circle centred at $(0,-1)$ with radius $r = \sqrt{5}$}.
+  \]
+  \vs \\
+  The velocity at this point is given by
+  \[
+  q(1 + i) = \frac{2i}{i - (-1 - i)} = \frac{2i}{-1 + 2i} = \frac{2i(-1 - 2i)}{5} = \frac{4}{5} - \frac{2}{5}i.
+  \]
+  \vs \\
+  Sketch of the streamline below:
 
   \begin{figure}[htbp]
     \centering
     % Tikz picture for Q7-ai
     \input{tikz/Q5/Q5-c}
   \end{figure}
+  \vs
+
+  \item % Part (d)
+  Let $\Gamma$ be the line segment from $\alpha = 1$ to $\beta = 2 - 2i$.
+  \vs \\
+  By HD D1 2.2, p82, the flux is given by
+  \[
+  \mathcal{F}_\Gamma = \Im \Omega(\beta) - \Im \Omega(\alpha) = \Psi(\beta) - \Psi(\alpha).
+  \]
+
+  Then using $\Psi(z) = \log\left| z + i\right|^2$, from part (b), we get
+  \[
+  \mathcal{F}_\Gamma = \log \left| 2 - 2i + i\right|^2 - \log\left| 1 + i\right|^2 = \log( 4 + 1) - \log(1 + 1) = \log 5 - \log 2 = \log\frac{5}{2}.
+  \]
 \end{enumerate}
+\textcolor{blue}{Do you guys agree with this answer?}
+\newpage

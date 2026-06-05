@@ -2,7 +2,7 @@
 % Sketch of streamline
 \begin{tikzpicture}[scale=1]
   \def\W{10}
-  \def\H{9}
+  \def\H{8.0}
   \def\unit{1.25}
 
   \path[use as bounding box] (0,0) rectangle (\W,\H);
@@ -10,11 +10,11 @@
   % \LayoutGrid
 
   \def\xmin{-3}
-  \def\xmax{3}
+  \def\xmax{3.3}
   \def\ymin{-4}
-  \def\ymax{2}
+  \def\ymax{2.3}
 
-  \begin{scope}[shift={(4.40,5.75)}, scale=\unit]
+  \begin{scope}[shift={(4.40,5.0)}, scale=\unit]
 
     \drawAxes{\xmin}{\xmax}{\ymin}{\ymax}
 
@@ -25,25 +25,27 @@
     \coordinate (T) at ($(P)-(-1.4,0.7)$);
 
     % \draw[patharrow] (C) circle ({sqrt(5)});
-    \draw[patharrow=0.0]
+    \draw[patharrow=0.075,blue]
     ($(C)+({sqrt(5)},0)$)
     arc[start angle=0,end angle=-360,radius={sqrt(5)}];
 
-    \draw[fill=black,draw=black] (C) circle (2pt);
-    \node[below left] at (C) {$(0,-1)$};
-
-    \draw[fill=black,draw=black] (P) circle (2pt);
-    \node[above right] at (P) {$\alpha = 1+i$};
+    \node at (2.9,-1.9) {$\Psi = \log 5$};
 
     \draw[dashed] (C) -- (P);
     \node[right] at ($(C)!0.3!(P)$) {$r = \sqrt5$};
 
     % Tangent arrow
     \draw[tangentarrow] (P) -- (T);
-    \node[above right=-1pt] at (T) {$q(\alpha) = \frac{4}{5} - \frac{2}{5}i$};
+    \node[above right=-2pt] at (T) {$\frac{4}{5} - \frac{2}{5}i$};
 
     \node[below=1pt] at (\xmax,0) {$x$};
     \node[right=1pt] at (0,\ymax) {$y$};
+
+    \draw[fill=white,draw=black,line width=1pt] (C) circle (2pt);
+    \node[right=2pt] at (C) {$-i$};
+
+    \draw[fill=black,draw=black] (P) circle (2pt);
+    \node[above right] at (P) {$1+i$};
 
   \end{scope}
 \end{tikzpicture}
