@@ -1,0 +1,31 @@
+\section{Question 6}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    By HB D2 2.1 p89, the iteration sequence
+    \begin{align*}
+        z_{n+1} &= (z_n + 3i)(iz_n + 1), \qquad n = 0,1,2, \ldots \\
+        &= iz^2_n - 2z_n + 3i
+    \end{align*}
+    is conjugate to the iteration sequence
+\[ w_{n+1} = w^2_n + d  \qquad n= 0,1,2, \ldots, \]
+where
+\[ d = -3 - \frac{2}{2} - \frac{1}{4}(2^2) = -3-1-1 = -5 . \]
+The conjugating function is $ h(z) = iz - \dfrac{2}{2} = iz - 1 $. 
+\vs \\
+Thus, $ w_0 = h(z_0) = i(i)-1 = 2 $, as required.
+\vvs \\
+\item 
+\begin{enumerate}[label=(\roman*)]
+    \item 
+    $ c = -\dfrac{6}{5} + \frac{1}{10}i $, by the diagram in HB D2 4.4 p91 looks like it is in the Mandelbrot set.
+    \vs \\
+    Now,
+    \begin{align*}
+        |c+1| &=\left| \frac{1}{5} + \frac{1}{10}i  \right| \\ 
+              &= \sqrt{ \frac{1}{25} + \frac{1}{100} } \\
+              &= \sqrt{ \frac{5}{100} } \\
+              &= \sqrt{\frac{1}{20}} < \sqrt{ \frac{1}{16} } = \frac{1}{4}.
+    \end{align*}
+    So, by HB D2 4.11(b), $P_c$ has an attracting 2-cycle. Hence, by HB D2 4.10, p92, $ -\dfrac{6}{5} + \frac{1}{10}i $ is in the Mandelbrot set.
+\end{enumerate}
+\end{enumerate}
