@@ -5,7 +5,59 @@ For when it comes \ldots
     \item 
     {
     \color{teal}
-    I've been sent someone's Q9 and may get another in a day or two. It's 4 photos that I've uploaded as a zip to git. I haven't looked at it yet, but might get to start on it on Sunday.
+    I've been sent someone's Q9 and may get another in a day or two. It's 5 photos that I've uploaded as a zip to git. I haven't looked at it yet, but might get to start on it on Sunday.
+    }
+    \begin{enumerate}[label=(\roman*)]
+        \item 
+        Let $ |z+i| = 2 $ and $ z = , \; x, y \in \R $, then
+        \begin{align*}
+            |(z+i)^3 e^{-z}| &= |(z+i)^3| |e^{-z}| \\
+            &= |(z+i)^3| |e^{-x}|| e^{-iy} | \\
+            &= 8|e^{-x}|
+        \end{align*}
+        Now if $ |z+i| = 2 $, then $ -2 \leq x \leq 2 $, so
+        \begin{align*}
+            | (z+i)^3 e^{-z} | &\geq 8e^{-2} \\
+            \intertext{since $e^x$ is an increasing real function, }
+            &= \frac{8}{e^2} \geq 1, \text{ as required}.
+        \end{align*}
+        \leavevmode \vvs \\
+        \item 
+        \begin{align*}
+    \text{Let }
+    f(z) &= (z+i)^3 e^{-z} - \alpha \\
+    g(z) &= (z+i)^3 e^{-z}. \\
+\end{align*}
+Let $ \mathcal{R} $ be the simply connected region $\C$ and $ \Gamma \text{ be} \{z: |z| = 2 \} $ 
+\vs \\
+Then $f$ and $g$ are analytic on $ \mathcal{R} $, and $ \Gamma $ is a simple-closed contour in $ \mathcal{R} $.
+\vs \\
+So, for $ z \in \Gamma $
+\begin{align*}
+    | f(z) - g(z) | &= |-\alpha| \\
+    &< 1, \qquad \text{by the Triangle Inequality} \\
+    &\leq |g(z)|
+\end{align*}
+Thus, by Rouché's Theorem, $f$ has the same number of zeros as $g$ inside $\Gamma$, namely $3$, since $-i$ ia zero of order 3 and $ e^{-z} \neq 0 $ on $\C$. 
+\vs \\
+Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \} $.
+    \end{enumerate}
+    \leavevmode \vvs \\
+    \item 
+    The point $z = 99$ is outside the disc $ \{z: |z| < 2 \} $ and 
+    \begin{align*}
+        \left| \frac{ (99+i)^3 }{e^{99}} \right| &\leq \left| \frac{100^3}{e^{99}} \right| = \left| \frac{10^6}{e^{99}} \right| \\ 
+        \intertext{by the Triangle Inequality}
+        &<  \left| \frac{(2^{10})^2}{ e^{99} } \right|
+        \intertext{as $2^{10} > 10^3$}
+        &< \left| \frac{(2^{10})^2}{ e^{90} } \right| \\
+        &< \left| \frac{2^{20}}{ 2^{90} } \right| < 1.
+    \end{align*}
+    So $ \alpha = \dfrac{ (99+i)^3 }{e^{99}} $ has a modulus less than 1 and is a solution of equation $ (*) $.
+    \vvs \\
+    {
+    \color{teal}
+    I'm not sure I necessarily need to prove that whole inequality; the solution I'm working from used $z=100$ and just asserted that the inequality was less than 1, which is probably what I would have done in the exam too. But I thought I would for completeness.
     }
 \end{enumerate}
 
