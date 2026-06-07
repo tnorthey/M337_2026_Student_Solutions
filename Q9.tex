@@ -28,7 +28,7 @@ For when it comes \ldots
     f(z) &= (z+i)^3 e^{-z} - \alpha \\
     g(z) &= (z+i)^3 e^{-z}. \\
 \end{align*}
-Let $ \mathcal{R} $ be the simply connected region $\C$ and $ \Gamma \text{ be} \{z: |z| = 2 \} $ 
+Let $ \mathcal{R} $ be the simply connected region $\C$ and $ \Gamma \text{ be} \{z: |z| = 2 \} $. 
 \vs \\
 Then $f$ and $g$ are analytic on $ \mathcal{R} $, and $ \Gamma $ is a simple-closed contour in $ \mathcal{R} $.
 \vs \\
@@ -36,12 +36,11 @@ So, for $ z \in \Gamma $
 \begin{align*}
     | f(z) - g(z) | &= |-\alpha| \\
     &< 1, \qquad \text{by the Triangle Inequality} \\
-    &\leq |g(z)|
+    &\leq |g(z)|.
 \end{align*}
 Thus, by Rouché's Theorem, $f$ has the same number of zeros as $g$ inside $\Gamma$, namely $3$, since $-i$ ia zero of order 3 and $ e^{-z} \neq 0 $ on $\C$. 
 \vs \\
 Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \} $.
-    \end{enumerate}
     \leavevmode \vvs \\
     \item 
     The point $z = 99$ is outside the disc $ \{z: |z| < 2 \} $ and 
@@ -59,5 +58,37 @@ Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \}
     \color{teal}
     I'm not sure I necessarily need to prove that whole inequality; the solution I'm working from used $z=100$ and just asserted that the inequality was less than 1, which is probably what I would have done in the exam too. But I thought I would for completeness.
     }
+    \end{enumerate}
+    \leavevmode \vvs\\
+    \item
+    \begin{enumerate}[label=(\roman*)]
+        \item 
+        {
+        \color{teal}
+        I've not used tikz before, so maybe someone else could do this subpart.
+        }
+        \vvs \\
+        \item 
+        $ \lambda = 1 $ gives $ 1(1-i) = 1-i $, which lies on the boundary of $ \mathcal{R} $.
+        \vvs \\
+        \item 
+        Both $ \mathcal{R} $ and $ \mathcal{S} $ are lunes with angle $ \dfrac{3\pi}{4} $. The vertices of $ \mathcal{R} $ are $ -1-i $ and $0$ and the vertices of $ \mathcal{S} $ are 0 and $\infty$.
+        \vs \\
+        Thus, we can apply the Strategy for Mapping Lunes to find a Möbius transformation that maps $ \mathcal{R} $ onto $ \mathcal{S} $. 
+        \vs \\
+        We choose $f$ such that $ f(-1-i) = 0 $, and $ f(0) = \infty $. Next we choose $f$ to map the point $1-i$ on the boundary of $ \mathcal{R} $, traversing from $-1-i$ to 0 with $ \mathcal{R} $ on the left, to the point 1 on the half line from 0 to $\infty$, with $ \mathcal{S} $ on the left.
+        \vs \\
+        Since $ f(-1-i) = 0, \; f(1-i) = 1, \; f(0) = \infty $, we can apply the Explicit Formula for Möbius Transformations to find,
+        \begin{align*}
+            f(z) &= \frac{ \big(z-(-1-i)\big)\big( 1-i-0 \big) }{ \big( z-0 \big) \big( (1-i)-(-1-i) \big) } \\
+                 &= \frac{ (z+1+i)(1-i) }{z(2)} \\
+                 &= \frac{ (1-i)z + 2}{2z},
+        \end{align*}
+        \vs \\
+        Hence,
+        \[ f(z) = \frac{ (1-i)z + 2}{2z} . \]
+        \vs \\
+        By the strategy this transformation satisfies $ f(\mathcal{R}) = \mathcal{S}  $. Furthermore, because Möbius transformations are one-to-one and conformal on $ \hat{\C} $, we see that $f$ is a one-to-one and conformal mapping from $ \mathcal{R} $ onto $ \mathcal{S} $.
+    \end{enumerate}
 \end{enumerate}
 
