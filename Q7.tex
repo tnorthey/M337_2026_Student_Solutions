@@ -30,7 +30,17 @@
     \vs \\
     I'll add a solution based on my answer.
     }
+    \vs \\
+    Finally, $f$ is unbounded on the set $C - \{-1\}$.
+    \vs \\
+    As $f$ has a pole at -1, by HB B4 3.3 p58, $ f(z) \to \infty $, as $ z \to -1 $, e.g. along the points $ -1 + \dfrac{1}{2n}, \; n=1,2,\ldots $, which are all in $ C - \{  -1 \} $.
+    \vs \\
+    {
+    \color{teal}
+    Oops, I think that's wrong as well. It should be the CW theorem as it's an essential singularity. I'm going to push this and then do another version.
+    }
     \end{enumerate}
+    \leavevmode \vvs \\
 
     \item 
     \begin{enumerate}
@@ -40,7 +50,7 @@
         z = x + iy
         \]
         \[
-        \implies \overline{z} = x - iy
+        \implies \overline{z} = x - iy.
         \]
         Then,
         \[
@@ -50,25 +60,25 @@
         = x^2 + i^2y^2 - 2ixy +x^2 +y^2 - y
         \]
         \[
-        = 2x^2 - y - 2ixy
+        = 2x^2 - y - 2ixy,
         \]
         as required.
         \item 
         We let $h(x+iy)=u(x,y)+iv(x,y)$ be defined on a region $\C$ containing $a+ib$. Then,
         \[
-        u(x,y)=2x^2 - y
+        u(x,y)=2x^2 - y,
         \]
-        and,
+        and
         \[
         v(x,y)=-2xy
         \]
         and hence their partials are,
         \[
-        u_x = 4x,\quad u_y = -1
+        u_x = 4x,\quad u_y = -1,
         \]
-        and,
+        and
         \[
-        v_x = -2y,\quad v_y = -2x
+        v_x = -2y,\quad v_y = -2x.
         \]
         We now check the point $(a,b)$ via the Cauchy-Riemann equations,
         \[
@@ -78,21 +88,25 @@
         \implies 4a = -2a
         \]
         \[
-        \implies a = 0
+        \implies a = 0,
         \]
-        and,
+        and
         \[
         v_x(a,b)=-2b = -u_y(a,b) = -1
         \]
         \[
-        \implies b = \frac{1}{2}
+        \implies b = \frac{1}{2}.
         \]
         Therefore, the CR equations are satisfied at $(0, \frac{1}{2})$, and since the partial derivatives exist at $(x,y)$ for each $x+iy \in \C$ and are continuous at $(0, \frac{1}{2})$, $h$ is differentiable at this point and has a derivative here of,
         \[
-        h'(0+\frac{1}{2}i) = - i
+        h'\left(0+\frac{1}{2}i\right) = - i,
         \]
-        by the Cauchy-Riemann Converse Theorem.
+        by the Cauchy-Riemann Converse Theorem. However, the Cauchy-Riemann equations fail at points other than $\left(0, \frac{1}{2}\right)$, so $f$ is not differentiable on $ \C - \{\left(0, \frac{1}{2}\right)\}$ by the Cauchy-Riemann Theorem.
         \end{enumerate}
+        {
+        \color{teal}
+        I also added in a sentence explicitly referencing the CR Theorem. I think there's a mark for that.
+        }
 \end{enumerate}
 
 \begin{figure}[p]
