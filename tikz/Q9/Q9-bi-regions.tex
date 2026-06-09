@@ -1,0 +1,54 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \def\W{19}
+  \def\H{21}
+  \def\Size{7.2}
+  \path[use as bounding box] (0,0) rectangle (\W,\H);
+  % \LayoutGrid
+
+  \def\TopCentre{7.5,18.0}
+  \def\LeftCentre{7.5,9}
+
+  % Region R
+  \begin{scope}[
+    shift={(\TopCentre)},
+    scale={\Size/6}
+    ]
+
+    \node[anchor=north west] at (-2.4,2.4) {$ \mbox{\Large $\mathcal{R}$ }  $};
+
+    \fill[blue!10] (0,-1) circle (1);
+    \fill[white] (-1,-1) -- (0,0) -- (-1,0) -- cycle;
+  
+      \drawAxes{-3}{3}{-3}{3}
+      
+    \draw[openboundary] (-1,-1) -- (0,0);
+    \draw[openboundary] (-1,-1) arc[start angle=-180,end angle=90,radius=1];
+
+    \filldraw[openpoint] (0,0) circle (\pointsize);
+    \node at (0.3,0.35) {$0$};
+    \filldraw[openpoint] (-1,-1) circle (\pointsize);
+    \node at (-1.26,-0.62) {$-1-i$};
+      
+  \end{scope}
+
+  % Region S
+  \begin{scope}[
+    shift={(\LeftCentre)},
+    scale={\Size/6}
+    ]
+
+    \node[anchor=north west] at (-2.4,1.8) {$ \mbox{\Large $\mathcal{S}$ }  $};
+
+    \fill[blue!10] (0,0) -- (3,0) -- (3,3) -- (-3,3) -- cycle;
+    
+    \draw[openboundary] (0,0) -- (3,0);
+    \draw[openboundary] (0,0) -- (-3,3);
+
+    \drawAxes{-3}{3}{-3}{3}
+    
+    \filldraw[openpoint] (0,0) circle (\pointsize);
+    \node at (-0.3,-0.35) {$0$};
+      
+  \end{scope}
+
+  \end{tikzpicture}
