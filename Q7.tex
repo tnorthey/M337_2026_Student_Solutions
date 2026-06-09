@@ -3,6 +3,11 @@
 \item
     \begin{enumerate}[label=(\roman*)]
     \item See set sketches below.
+    \begin{figure}[p]
+\centering
+    % TIKZ PICTURE FOR Q7-ai
+    \input{tikz/Q7/Q7-ai-set-sketches}
+\end{figure}
     \item 
     Firstly, $A-B$ is bounded since it can be contained in some closed disc. It is also closed. Therefore, it is compact.
     
@@ -33,17 +38,14 @@
     \vs \\
     Finally, $f$ is unbounded on the set $C - \{-1\}$.
     \vs \\
-    As $f$ has a pole at -1, by HB B4 3.3 p58, $ f(z) \to \infty $, as $ z \to -1 $, e.g. along the points $ -1 + \dfrac{1}{2n}, \; n=1,2,\ldots $, which are all in $ C - \{  -1 \} $.
+    The Laurent Series of $f$ about -1 will contain $a_n \neq 0$ for infinitely many $n<0$, therefore it has an essential singularity at -1, by HB B4 2.10(c), p57. 
     \vs \\
-    {
-    \color{teal}
-    Oops, I think that's wrong as well. It should be the CW theorem as it's an essential singularity. I'm going to push this and then do another version.
-    }
+    Thus, by the Casorati–Weierstrass Theorem, on the punctured disc $ D =  \{z: 0 < |z+1| < 1 \} $, $ |f(z)| $ will get arbitrarily close to any arbitrarily large number. In other words it is unbounded on $ D \in C - \{  -1 \} $.
     \end{enumerate}
     \leavevmode \vvs \\
-
+    \newpage
     \item 
-    \begin{enumerate}
+    \begin{enumerate}[label=(\roman*)]
         \item 
         Let,
         \[
@@ -109,8 +111,4 @@
         }
 \end{enumerate}
 
-\begin{figure}[p]
-\centering
-    % TIKZ PICTURE FOR Q7-ai
-    \input{tikz/Q7/Q7-ai-set-sketches}
-\end{figure}
+
