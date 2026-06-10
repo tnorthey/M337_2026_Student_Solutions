@@ -13,34 +13,40 @@
     
     The function $f$ is continuous on $A-B$ since it has no singularities within. Therefore, by The Boundedness Theorem, $f$ is bounded on $A-B$.
 
-    Finally, the set $C$ is unbounded, as is $C - \{-1\}$.
-
-    Also, if we write $z+i = x+iy$,
-    \[
-    \implies \exp\left(\frac{i}{z+i}\right) = \exp\left(\frac{y}{x^2+y^2}\right)\exp\left(i\frac{x}{x^2+y^2}\right)
-    \]
-    it is clear that as $y\rightarrow\infty$, $f\rightarrow\infty$. Hence, $f$ is unbounded on $C-\{-1\}$.
-
-    \textcolor{purple}{I think this is valid reasoning, since as $y\rightarrow\infty$ the imaginary part $\rightarrow e^{i/x}$ and the real part $\rightarrow \infty$, so it's a circle tending towards infinite radius which is clearly unbounded. However, I'm not 100\% sure. I'm certain both of you did it differently, we can consider replacing what I did with one of your solutions Donach and John?\\ -- Thomas}
-
-    \textcolor{blue}{This is the only question on the paper I didn't do. I'll have a think about it when I've time.\\ -- John}
-    
-    \textcolor{teal}{The edit I'd make to your solution is to add modulus signs, so as $ y \to \infty, |f(z)| \to \infty $. 
-    \vs \\
-    I'd also wonder if it's worth including a sequence of points, as in the solution to Spec 1 Q7(a)(ii)? \\
-    Eg, for $n \in \N, \; (n+2)i \in C$, and  $|f\big((n+2)i\big)| = \left| \exp\dfrac{n+3}{(n+3)^2} \right| \left| \exp i(0) \right| = \exp(n+3) \to \infty $ as $ n \to \infty $, 
-    \\ -- Donach
-    \vs \\
-    Hang on, that doesn't work. As $y \to \infty $, the real part goes to $ e^0 = 1 $.
-    \vs \\
-    I'll add a solution based on my answer.
-    }
     \vs \\
     Finally, $f$ is unbounded on the set $C - \{-1\}$.
     \vs \\
     The Laurent Series of $f$ about -1 will contain $a_n \neq 0$ for infinitely many $n<0$, therefore it has an essential singularity at -1, by HB B4 2.10(c), p57. 
     \vs \\
     Thus, by the Casorati–Weierstrass Theorem, on the punctured disc $ D =  \{z: 0 < |z+1| < 1 \} $, $ |f(z)| $ will get arbitrarily close to any arbitrarily large number. In other words it is unbounded on $ D \in C - \{  -1 \} $.
+    
+    % Finally, the set $C$ is unbounded, as is $C - \{-1\}$.
+
+    % Also, if we write $z+i = x+iy$,
+    % \[
+    % \implies \exp\left(\frac{i}{z+i}\right) = \exp\left(\frac{y}{x^2+y^2}\right)\exp\left(i\frac{x}{x^2+y^2}\right)
+    % \]
+    % it is clear that as $y\rightarrow\infty$, $f\rightarrow\infty$. Hence, $f$ is unbounded on $C-\{-1\}$.
+
+    % \textcolor{purple}{I think this is valid reasoning, since as $y\rightarrow\infty$ the imaginary part $\rightarrow e^{i/x}$ and the real part $\rightarrow \infty$, so it's a circle tending towards infinite radius which is clearly unbounded. However, I'm not 100\% sure. I'm certain both of you did it differently, we can consider replacing what I did with one of your solutions Donach and John?\\ -- Thomas}
+
+    % \textcolor{blue}{This is the only question on the paper I didn't do. I'll have a think about it when I've time.\\ -- John}
+    
+    % \textcolor{teal}{The edit I'd make to your solution is to add modulus signs, so as $ y \to \infty, |f(z)| \to \infty $. 
+    % \vs \\
+    % I'd also wonder if it's worth including a sequence of points, as in the solution to Spec 1 Q7(a)(ii)? \\
+    % Eg, for $n \in \N, \; (n+2)i \in C$, and  $|f\big((n+2)i\big)| = \left| \exp\dfrac{n+3}{(n+3)^2} \right| \left| \exp i(0) \right| = \exp(n+3) \to \infty $ as $ n \to \infty $, 
+    % \\ -- Donach
+    % \vs \\
+    % Hang on, that doesn't work. As $y \to \infty $, the real part goes to $ e^0 = 1 $.
+    % \vs \\
+    % I'll add a solution based on my answer.
+    % }
+    
+    \vs 
+
+    \textcolor{purple}{Ok, I put your solution as the official one Donach. Thanks! -- Thomas}
+
     \end{enumerate}
     \leavevmode \vvs \\
     \newpage
@@ -105,10 +111,10 @@
         \]
         by the Cauchy-Riemann Converse Theorem. However, the Cauchy-Riemann equations fail at points other than $\left(0, \frac{1}{2}\right)$, so $f$ is not differentiable on $ \C - \{\left(0, \frac{1}{2}\right)\}$ by the Cauchy-Riemann Theorem.
         \end{enumerate}
-        {
-        \color{teal}
-        I also added in a sentence explicitly referencing the CR Theorem. I think there's a mark for that.
-        }
+        % {
+        % \color{teal}
+        % I also added in a sentence explicitly referencing the CR Theorem. I think there's a mark for that.
+        % }
 \end{enumerate}
 
 
