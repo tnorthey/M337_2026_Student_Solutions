@@ -2,10 +2,6 @@
 \section{Question 9}
 \begin{enumerate}[label=(\alph*)]
     \item 
-    {
-    \color{teal}
-    I've been sent someone's Q9 and may get another in a day or two. It's 5 photos that I've uploaded as a zip to git. I haven't looked at it yet, but might get to start on it on Sunday.
-    }
     \begin{enumerate}[label=(\roman*)]
         \item 
         Let $ |z+i| = 2 $ and $ z = , \; x, y \in \R $, then
@@ -42,14 +38,14 @@ Thus, by Rouché's Theorem, $f$ has the same number of zeros as $g$ inside $\Gam
 Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \} $.
     \leavevmode \vvs \\
     \item 
-    The point $z = 99$ is outside the disc $ \{z: |z| < 2 \} $ and 
+    The point $z = 99$ is outside the disc $ \{z: |z+i| < 2 \} $ and 
     \begin{align*}
         \left| \frac{ (99+i)^3 }{e^{99}} \right| &\leq \left| \frac{100^3}{e^{99}} \right| = \left| \frac{10^6}{e^{99}} \right| \\ 
-        \intertext{by the Triangle Inequality}
+        \intertext{by the Triangle Inequality,}
         &<  \left| \frac{(2^{10})^2}{ e^{99} } \right|
-        \intertext{as $2^{10} > 10^3$}
+        \intertext{as $2^{10} > 10^3$,}
         &< \left| \frac{(2^{10})^2}{ e^{90} } \right| \\
-        &< \left| \frac{2^{20}}{ 2^{90} } \right| < 1.
+        &< \left| \frac{2^{20}}{ 2^{90} } \right| = 2^{-70} < 1.
     \end{align*}
     So $ \alpha = \dfrac{ (99+i)^3 }{e^{99}} $ has a modulus less than 1 and is a solution of equation $ (*) $.
     \vvs \\
@@ -62,15 +58,7 @@ Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \}
     \item
     \begin{enumerate}[label=(\roman*)]
         \item 
-        {
-        \color{teal}
-        I've not used tikz before, so maybe someone else could do this subpart.
-        }
-        \begin{figure}
-            \centering
-            % TIKZ PICTURE FOR Q9-bi
-            \input{tikz/Q9/Q9-bi-regions}
-        \end{figure}
+        See sketches below.
         \vvs \\
         \item 
         $ \lambda = 1 $ gives $ 1(1-i) = 1-i $, which lies on the boundary of $ \mathcal{R} $.
@@ -93,6 +81,11 @@ Hence, $ (z+i)^3 e^{-z} = \alpha $ has 3 solutions on the disc $ \{z: |z| < 2 \}
         \[ f(z) = \frac{ (1-i)z + 2}{2z} . \]
         \vs \\
         By the strategy this transformation satisfies $ f(\mathcal{R}) = \mathcal{S}  $. Furthermore, because Möbius transformations are one-to-one and conformal on $ \hat{\C} $, we see that $f$ is a one-to-one and conformal mapping from $ \mathcal{R} $ onto $ \mathcal{S} $.
+        \begin{figure}
+            \centering
+            % TIKZ PICTURE FOR Q9-bi
+            \input{tikz/Q9/Q9-bi-regions}
+        \end{figure}
     \end{enumerate}
 \end{enumerate}
 
